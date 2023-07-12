@@ -95,8 +95,14 @@ public class AppMain extends JFrame implements ActionListener{
 				if(data==-1)break;
 				fos.write(data);//1바이트 쓰기
 				amount=is.available();
+				
+				//선생님 맞는 접근인건지는 모르겠지만.. 
+				//밑에 수식이 안 먹혀요. 계속 0만 나와요 ㅠㅠ
+		
 				int n=amount/fullamount*100;
 				System.out.println(amount+"/"+fullamount+"/"+n);
+				
+				
 				
 			}
 			JOptionPane.showMessageDialog(this, "다운로드 완료");
